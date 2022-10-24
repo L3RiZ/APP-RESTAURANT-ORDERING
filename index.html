@@ -1,0 +1,37 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <!-- GOOGLE FONT -->
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Smythe">
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+       <!-- CSS --> 
+       <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Jimmys Diner</h1>
+            <p class="header-text">The best burgers and pizzas in town.</p>
+        </header>
+        <main>
+            <div class="menu" id="menu">
+                <!-- MENU HERE -->
+            </div>
+            <div class="order-menu hidden" id="your-order">
+                <!--- YOUR ORDER HERE -->
+            </div>
+            <div id="completed-order" class="completed-order hidden">
+                <!--- ORDER CONFIRMATION -->
+            </div>
+            <div class="form-cnt hidden" id="form-cnt">
+                <h4>Enter card details</h4>
+                <form id="order-form">
+                   <input type="text" name="name" id="name" placeholder="Enter your name" required/>
+                   <input type="number" name="card-number" id="card-number" placeholder="Enter card number" required/> 
+                   <input type="number" name="cvv" id="cvv" placeholder="Enter CVV" required/>  
+                   <button type="submit" class="order-button smaller" id="submit-button">Pay</button>
+                </form>
+            </div>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
